@@ -2,6 +2,7 @@ import auth from "@/libs/auth";
 import prisma from "@/libs/prisma";
 import { NextResponse } from "next/server";
 
+
 export async function  POST (request:Request) {
     try {
         const { currentUser } = await auth();
