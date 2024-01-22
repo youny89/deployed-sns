@@ -47,7 +47,7 @@ const EditUserModal = () => {
         } finally {
             setIsLoading(false);
         }
-    },[name, username, bio, coverImage, profileImage])
+    },[name, username, bio, coverImage, profileImage, editUserModal, mutateFetchedUser])
 
     const bodyContent = (
         <div className="flex flex-col gap-4">

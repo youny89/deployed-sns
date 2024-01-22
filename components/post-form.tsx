@@ -52,7 +52,7 @@ const PostForm:React.FC<PostFormProps> = ({placeholder, isComment=false, postId}
         } finally {
             setIsLoading(false);
         }
-    },[body, mutatePosts,postId])
+    },[body, mutatePosts,postId,isComment, mutatePost])
 
     if(!currentUser) {
         return (
