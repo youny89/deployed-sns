@@ -5,6 +5,8 @@ interface IParams {
     params: { userId: string }
 }
 
+export const dynamic = 'force-dynamic';
+
 export async function GET (req:Request, {params}: IParams) {
     try {
         if(!params?.userId) return new NextResponse('No User ID',{status:400});

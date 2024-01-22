@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server"
 import prisma from '@/libs/prisma'
 
+export const dynamic = 'force-dynamic';
+
 interface IParams {
     params: { postId: string }
 }

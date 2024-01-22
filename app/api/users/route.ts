@@ -2,6 +2,8 @@ import { NextResponse } from "next/server"
 import prisma from '@/libs/prisma'
 import auth from "@/libs/auth";
 
+export const dynamic = 'force-dynamic';
+
 export async function GET (req:Request) {
     try {
         const users = await prisma.user.findMany({
